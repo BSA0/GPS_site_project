@@ -1,2 +1,2 @@
-# GPS_site_project
-School project about GPS. 
+# GPS site project
+Small school project about GPS. 
