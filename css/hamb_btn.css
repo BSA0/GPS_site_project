@@ -1,0 +1,58 @@
+.menu-btn {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 50px;
+	height: 50px;
+
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+}
+
+.menu-btn_stick {
+	width: 30px;
+	height: 6px;
+	border-radius: 4px; 
+
+	background-color: #ffffff;
+
+	transition: all .5s ease-in-out;
+}
+
+.menu-btn_stick::before,
+.menu-btn_stick::after {
+	content: '';
+	position: absolute;
+
+	width: 30px;
+	height: 6px;
+	border-radius: 5px; 
+
+	background-color: #ffffff;
+
+	transition: all .5s ease-in-out;
+}
+
+.menu-btn_stick::before {
+	transform: translateY(-8px);
+}
+
+.menu-btn_stick::after {
+	transform: translateY(8px);
+}
+
+.menu-btn.open .menu-btn_stick {
+	transform: translateX(-50px);
+	background: transparent;
+}
+
+.menu-btn.open .menu-btn_stick::before {
+	transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn_stick::after {
+	transform: rotate(-45deg) translate(35px, 35px);
+}

@@ -1,0 +1,90 @@
+.text_plate {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+}
+
+.regular_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	flex-grow: 1;
+
+	background-color: #101010;
+}
+
+.regular_text > * {
+	text-align: center;
+	width: 80%;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 21px;
+	color: #fff;
+
+	margin-top: 15px;
+}
+
+.regular_text > h1 {
+	text-align: left;
+	width: 80%;
+
+	font-family: "Playfair Display", sans-serif;
+	font-style: italic;
+    font-size: 24px;
+	color: #fff;
+
+	margin-top: 15px;
+}
+
+.title_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+
+	height: 200px;
+
+	font-family: "Roboto",Arial,sans-serif;
+	font-weight: bold;
+	font-size: 60px;
+	color: #fff;
+
+	margin: 15px;
+}
+
+.main_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 30%;
+
+	font-family: "Roboto",Arial,sans-serif;
+	font-weight: bold;
+	font-size: 70px;
+	color: #fff;
+}
+
+.linklist {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 50%;
+	width: 100%;
+}
+
+.linklist > * {
+	margin: 15px;
+}
+
+.linkitem {
+	font: 30px Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #fff;
+}
